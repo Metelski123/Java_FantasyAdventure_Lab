@@ -1,5 +1,4 @@
-package characters;
-
+package characters.mage;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -33,10 +32,24 @@ public class WizardTest {
 
     @Test
     public void setMaxHealth() {
-        wizard = new Wizard("John", 50, 25);
-        assertEquals(50, wizard.getMaxHealth());
-        wizard.setMaxHealth(100);
-        assertEquals(100, wizard.getMaxHealth());
+        wizard.setMaxHealth(150);
+        assertEquals(150, wizard.getMaxHealth());
+    }
+
+    @Test
+    public void getCurrentHealth() {
+        assertEquals(100, wizard.getCurrentHealth());
+    }
+
+    @Test
+    public void setCurrentHealth() {
+        wizard.setCurrentHealth(30);
+        assertEquals(30, wizard.getCurrentHealth());
+    }
+
+    @Test
+    public void canCastSpell() {
+
     }
 
 }

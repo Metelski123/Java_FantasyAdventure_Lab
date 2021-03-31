@@ -1,4 +1,6 @@
-package characters;
+package characters.fighter;
+
+import characters.Character;
 
 public abstract class Fighter extends Character {
 

@@ -13,7 +13,7 @@ The task is to model a fantasy adventure. The game will have players, who will h
 	* they will have healing tools with which they can heal other players (potion, herbs, etc).
 	* should be able to change healing tool at any point in the game.
 
-The game will also have rooms to work through. Each room should either have some kind of treasure (Gold, Gems) to collect or an Enemy (Troll, Orc) to defeat before moving on.
+The game will also have rooms to work through. Each room should either have some kind of treasure (Gold, Gems) to collect or an enemies (Troll, Orc) to defeat before moving on.
 
 ## Remember
  * Use TDD
@@ -21,8 +21,8 @@ The game will also have rooms to work through. Each room should either have some
 
 ## MVP
 1. Create an abstract class `Player`. Each player will have a name and a number of health points.
-2. Create an abstract class for `Enemy`. Each enemy will have a number of health points and a method to take damage.
-3. Create some subclasses of `Enemy` (Troll, Orc).
+2. Create an abstract class for `enemies`. Each enemy will have a number of health points and a method to take damage.
+3. Create some subclasses of `enemies` (Troll, Orc).
 4. Create an interface `IWeapon` which has a method `attack`
 5. Create classes which implement the `IWeapon` interface, e.g. Sword, Club, Axe.
 	*	Each of these could have a different damage value, which affects the health of the enemy attacked.
